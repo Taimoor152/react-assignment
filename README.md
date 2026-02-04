@@ -121,29 +121,6 @@ React-assignment/
 
 ---
 
-## 📱 Features
-
-- ✅ **3 Complete Screens** matching the design
-- ✅ **Responsive Design** - Desktop, Tablet, Mobile
-- ✅ **Component-based Architecture** - Reusable components
-- ✅ **React Router** - Navigation between pages
-- ✅ **Mock Data** - Static JSON for demonstration
-- ✅ **Modern UI** - Clean design with proper spacing
-- ✅ **Interactive Elements** - Tabs, clickable items, hover states
-- ✅ **Charts** - Bar chart with Recharts library
-- ✅ **SVG Icons** - Custom icons throughout
-
----
-
-## 🔗 Routes
-
-| Route | Screen | Description |
-|-------|--------|-------------|
-| `/` | Dashboard | Main dashboard with all widgets |
-| `/details/:id` | Details Page | Overview & Evidence tabs |
-
----
-
 ## 📊 Navigation Flow
 
 ```
@@ -156,23 +133,6 @@ Details Page (/details/strategy-planning)
     ├── [Overview] tab  ← Default view
     │
     └── [Evidence] tab  ← Click to switch
-```
-
----
-
-## 🎨 Design Specifications
-
-**Color Palette:**
-- Primary Navy: `#1e3a5f`
-- Success Green: `#4caf50`
-- Warning Orange: `#ff9800`
-- Danger Red: `#f44336`
-- Background: `#f5f7f9`
-
-**Responsive Breakpoints:**
-- Desktop: `> 1200px`
-- Tablet: `768px - 1200px`
-- Mobile: `< 768px`
 
 ---
 
