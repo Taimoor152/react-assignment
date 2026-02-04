@@ -1,0 +1,61 @@
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  z-index: 999;
+}
+
+.bottom-bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background-color: #1e3a5f;
+  color: white;
+}
+
+.view-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.bottom-bar-text {
+  font-size: 14px;
+}
+
+.ask-edit-btn {
+  padding: 8px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ask-edit-btn:hover {
+  background-color: #1976d2;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+

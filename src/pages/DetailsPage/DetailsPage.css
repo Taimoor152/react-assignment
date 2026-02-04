@@ -1,0 +1,416 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Page Header */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #f0f0f0;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin: 0;
+}
+
+/* Info Card */
+.info-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.info-card-content {
+  flex: 1;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #f5f7f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin: 0 0 8px 0;
+}
+
+.info-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.progress-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.progress-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+}
+
+.progress-bg {
+  stroke: #e8f5e9;
+}
+
+.progress-fill {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #4caf50;
+}
+
+/* Evidence Summary */
+.evidence-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.summary-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-icon.orange {
+  background-color: #fff3e0;
+  color: #ff9800;
+}
+
+.summary-icon.blue {
+  background-color: #e3f2fd;
+  color: #2196f3;
+}
+
+.summary-icon.yellow {
+  background-color: #fffde7;
+  color: #ffc107;
+}
+
+.summary-icon.green {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a5f;
+  line-height: 1;
+}
+
+.summary-label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.tab-btn {
+  padding: 10px 24px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  background-color: #f5f7f9;
+}
+
+.tab-btn.active {
+  background-color: #1e3a5f;
+  color: white;
+}
+
+/* Tab Content */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab-content.evidence-tab {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+
+/* Content Card */
+.content-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.content-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.content-row:last-child {
+  border-bottom: none;
+}
+
+.content-label {
+  padding: 20px 24px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  border-right: 1px solid #f0f0f0;
+}
+
+.content-value {
+  padding: 20px 24px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content-value.highlight {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.requirement-item {
+  margin: 0 0 8px 0;
+}
+
+.requirement-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Leaders Section */
+.leaders-section {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.leaders-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.leader-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.leader-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.leader-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.leader-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.leader-role {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Evidence Sidebar */
+.evidence-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.evidence-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 12px;
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f44336;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-text {
+  font-size: 13px;
+  color: #333;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .evidence-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tab-content.evidence-tab {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .evidence-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .content-row {
+    grid-template-columns: 1fr;
+  }
+
+  .content-label {
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .info-card {
+    flex-direction: column;
+  }
+
+  .progress-circle {
+    align-self: flex-end;
+  }
+}
+

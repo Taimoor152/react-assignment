@@ -1,0 +1,46 @@
+.compliance-score {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.compliance-score .section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.gauge-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gauge-svg {
+  width: 200px;
+  height: 130px;
+}
+
+.gauge-center {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+
+.gauge-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e3a5f;
+}
+
+.gauge-label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
