@@ -42,7 +42,7 @@ A comprehensive React dashboard application for **"TAHWUL - Enabling Digital Tra
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/React-assignment.git
+git clone https://github.com/Taimoor152/React-assignment.git
 ```
 
 2. **Navigate to the project directory**
@@ -189,7 +189,7 @@ Details Page (/details/strategy-planning)
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@Taimoor152](https://github.com/Taimoor152)
 
 ---
 
